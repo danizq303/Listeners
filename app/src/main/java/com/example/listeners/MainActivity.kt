@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 binding.textView3.text = text.toString()
         }
 
-        binding.editTextNumber3.setOnFocusChangeListener { v, hasFocus ->
+        binding.editTextNumber3.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 binding.button.setBackgroundColor(Color.parseColor("#FF0000"))
                 binding.button2.setBackgroundColor(Color.parseColor("#FF0000"))
